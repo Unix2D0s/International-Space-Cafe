@@ -14,6 +14,17 @@ User Authentication and Database Integration: To enable features like user profi
 
 Cosmic Dust Reward System: As a unique twist, users will earn "Cosmic Dust" for actively participating in the forum, contributing solutions, and helping others. Accumulated Cosmic Dust can be exchanged for rewards, such as discounts on cafe purchases or even free beverages.
 
+
+## Developers and Team Members
+
+| Name             | Role               |
+| ---------------- | ------------------ |
+| Charanjeet       | Frontend Developer |
+| Charles          | Frontend Developer |
+| Niklaus          | Frontend Developer |
+| Thamasha         | Frontend Developer |
+| Vandan Bhatt     | Tech Lead & PM     |
+
 ### Tech Stack:
 
 The project will be developed using the MERN (MongoDB, Express.js, React.js, Node.js) stack. MongoDB will serve as the database for storing user data and forum content, while Express.js and Node.js will handle server-side logic and API integrations. React.js will power the frontend interface, providing a responsive and interactive user interface.
