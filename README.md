@@ -15,7 +15,7 @@ User Authentication and Database Integration: To enable features like user profi
 Cosmic Dust Reward System: As a unique twist, users will earn "Cosmic Dust" for actively participating in the forum, contributing solutions, and helping others. Accumulated Cosmic Dust can be exchanged for rewards, such as discounts on cafe purchases or even free beverages.
 
 
-## Developers and Team Members
+### Developers and Team Members
 
 | Name             | Role               |
 | ---------------- | ------------------ |
