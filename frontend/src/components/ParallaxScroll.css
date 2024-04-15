@@ -1,0 +1,15 @@
+.hero-container {
+    position: relative;
+    margin-top: 2vh;
+    margin-bottom: 10px;
+    width: 100vw;
+    height: 90vh;
+    overflow: hidden;
+
+    background-image: url('/hero.png');
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
