@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import NoPage from './pages/NoPage'
+import Playground from './pages/Playground'
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
                     <Route path='/home' element={<Home />}></Route>
                     <Route path='/about' element={<About />}></Route>
                     <Route path='/contact' element={<Contact />}></Route>
+                    <Route path='/playground' element={<Playground />}></Route>
                     <Route path='*' element={<NoPage />}></Route>
                 </Routes>
             </Router>
