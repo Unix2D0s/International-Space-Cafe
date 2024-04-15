@@ -1,18 +1,24 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Toaster } from "react-hot-toast";
+import Home from './pages/Home'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import NoPage from './pages/NoPage'
 
 
 const App = () => {
     return (
-        <Router>
-            <Routes>
-                <Route path="/" element={}></Route>
-                <Route path="/" element={}></Route>
-                <Route path="/" element={}></Route>
-            </Routes>
-            <Toaster/>
-        </Router>
+        <div>
+            <Router>
+                <Routes>
+                    <Route index element={<Home />}></Route>
+                    <Route path='/home' element={<Home />}></Route>
+                    <Route path='/about' element={<About />}></Route>
+                    <Route path='/contact' element={<Contact />}></Route>
+                    <Route path='*' element={<NoPage />}></Route>
+                </Routes>
+            </Router>
+        </div>
     )
 }
 
