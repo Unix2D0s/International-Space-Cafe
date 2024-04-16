@@ -1,0 +1,9 @@
+.carousel_container {
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+}
+.transition {
+  margin-left: 100%;
+  transition: ease-in 1s;
+}
