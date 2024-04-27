@@ -1,14 +1,16 @@
 import NavBarCSS from './NavBar.module.css'
 import NavBarItem from './NavBarItem.jsx'
+import ISCLogo from './ISCLogo.jsx'
 
 function NavBar() { 
   return (
     <>
       <div className={NavBarCSS.gradientBackground}>
-        <NavBarItem itemName="About" />
-        <NavBarItem itemName="Reserve" />
-        <NavBarItem itemName="Menu" />
-        <NavBarItem itemName="Login" />
+        <ISCLogo/>
+        <NavBarItem itemName="ABOUT" />
+        <NavBarItem itemName="RESERVE" />
+        <NavBarItem itemName="MENU" />
+        <NavBarItem itemName="LOGIN" />
       </div>
     </>
   );
