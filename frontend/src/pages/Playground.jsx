@@ -1,7 +1,8 @@
-export default function Playground(){
+import NavBar  from "../components/NavBar"
+export default function Playground() {
     return (
         <div>
-            <h3>write your navbar scrollbtn scroll bar code here</h3>
+            <NavBar></NavBar>
         </div>
     )
 }

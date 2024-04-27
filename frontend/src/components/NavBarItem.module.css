@@ -1,0 +1,14 @@
+.item {
+  font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+  font-weight: normal;
+  color: white;
+  font-size: 24px;
+  float: left;
+  text-align: center;
+  padding: 14px 20px;
+}
+
+.item:hover {
+  text-shadow: 0 0 10px whitesmoke;
+  cursor: pointer; 
+} 
