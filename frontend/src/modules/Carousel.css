@@ -1,0 +1,22 @@
+.carousel_container {
+  position: relative;
+  display: flex;
+  justify-content: start;
+}
+
+.image {
+  transition: 1s;
+  width: 0px;
+  visibility: hidden;
+  object-fit: cover;
+}
+
+.image.current {
+  visibility: visible !important;
+  width: 50vw !important;
+}
+
+img {
+  width: 80vw;
+  height: 20vw;
+}
