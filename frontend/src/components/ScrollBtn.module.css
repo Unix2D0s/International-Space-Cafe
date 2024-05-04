@@ -1,0 +1,38 @@
+.scrollBtn{
+    background-color: rgb(227, 220, 220);
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.5;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3),
+                -5px -5px 5px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+.scrollBtn:hover{
+    opacity: 1;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+                -2px -2px 5px rgba(255, 255, 255, 0.3);
+}
+/* .btn-3d:active {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3),
+                -1px -1px 3px rgba(255, 255, 255, 0.3);
+} */
+
+.arrow {
+    background-color: transparent;
+    color: rgb(30, 45, 84);
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    /* opacity: 0.5; */
+}
+
+
