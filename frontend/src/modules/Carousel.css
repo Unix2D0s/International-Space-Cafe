@@ -1,22 +1,60 @@
-.carousel_container {
-  position: relative;
+.carousel_flex_container {
   display: flex;
-  justify-content: start;
+  width: 75vw;
+  height: 40vh;
+  overflow: hidden;
+}
+img {
+  width: 75vw;
+  height: 40vh;
 }
 
+@keyframes imageCurrent {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 75vw;
+  }
+}
+@keyframes image {
+  0% {
+    width: 75vw;
+  }
+  100% {
+    width: 0px;
+  }
+}
 .image {
-  transition: 1s;
-  width: 0px;
-  visibility: hidden;
-  object-fit: cover;
+  animation-name: image;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
 }
 
 .image.current {
-  visibility: visible !important;
-  width: 50vw !important;
+  animation-name: imageCurrent;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
 }
 
-img {
-  width: 80vw;
-  height: 20vw;
+.arrow {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 3rem 0.5rem;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.arrow:active {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.left {
+  bottom: calc(20vh + 3.5rem);
+}
+.right {
+  bottom: calc(20vh + 3.5rem);
+  left: 75vw;
+  transform: translate(-200%, 0);
 }
