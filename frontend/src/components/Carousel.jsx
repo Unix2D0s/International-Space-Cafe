@@ -4,6 +4,7 @@ import { useState } from "react";
 export default function Carousel({ imageArray }) {
   const [currentImage, setCurrentImage] = useState(0);
   const [animationPlayState, setAnimationPlayState] = useState("paused");
+  const [buttonVisibility, setButtonVisibility] = useState(false);
 
   const next = () => {
     if (currentImage != imageArray.length - 1) {
@@ -17,29 +18,48 @@ export default function Carousel({ imageArray }) {
       setAnimationPlayState("running");
     }
   };
+  const showButtons = () => {
+    setButtonVisibility(true);
+  };
+  const hideButtons = () => {
+    setButtonVisibility(false);
+  };
   return (
     <>
-      <div className="carousel_flex_container">
-        {imageArray.map((src, index) => {
-          return (
-            <div
-              key={index}
-              className={index === currentImage ? "image current" : "image"}
-              style={{
-                animationPlayState: animationPlayState,
-              }}
-            >
-              <img src={src} />
-            </div>
-          );
-        })}
+      <div className="carousel_container">
+        <div
+          className="carousel_flex_container"
+          onMouseEnter={showButtons}
+          onMouseOut={hideButtons}
+        >
+          {imageArray.map((src, index) => {
+            return (
+              <div
+                key={index}
+                className={index === currentImage ? "image current" : "image"}
+                style={{
+                  animationPlayState: animationPlayState,
+                }}
+              >
+                <img src={src} />
+              </div>
+            );
+          })}
+        </div>
+
+        <button
+          className={buttonVisibility ? "arrow left" : "arrow left invisible"}
+          onClick={previous}
+        >
+          &#8592;
+        </button>
+        <button
+          className={buttonVisibility ? "arrow right" : "arrow right invisible"}
+          onClick={next}
+        >
+          &#8594;
+        </button>
       </div>
-      <button className="arrow left" onClick={previous}>
-        &#8592;
-      </button>
-      <button className="arrow right" onClick={next}>
-        &#8594;
-      </button>
     </>
   );
 }
