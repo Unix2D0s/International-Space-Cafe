@@ -1,0 +1,73 @@
+.carousel_container {
+  display: flex;
+}
+
+.carousel_flex_container {
+  display: flex;
+  width: 75vw;
+  height: 40vh;
+  overflow: hidden;
+}
+img {
+  width: 75vw;
+  height: 40vh;
+}
+
+@keyframes imageCurrent {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 75vw;
+  }
+}
+@keyframes image {
+  0% {
+    width: 75vw;
+  }
+  100% {
+    width: 0px;
+  }
+}
+.image {
+  animation-name: image;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.image.current {
+  animation-name: imageCurrent;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.arrow {
+  transition: 0.5s;
+  position: relative;
+  top: calc(20vh - 3.5rem);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 3rem 0.5rem;
+  height: 7rem;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: black;
+  visibility: visible;
+}
+.arrow:active {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.left {
+  right: 75vw;
+}
+.right {
+  transform: translate(-200%, 0);
+}
+.invisible {
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+  visibility: hidden;
+}
